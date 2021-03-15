@@ -1,9 +1,7 @@
 ### Hey, I'm Anthony - a student transferring to University of Minnesota - Twin Cities for Computer Science.
 
-```java
-public static void main(String[] args) {
-  aboutMe();
-}
+```python
+def aboutMe():
 ```
 - 💻 I'm currently working on TamoStudy, which is an interactive Java application that implements a "Tamagotchi" and allows the user to focus on their work.
 - 🔥 I play games, read, edit, and code!
