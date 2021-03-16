@@ -13,7 +13,7 @@ def contact_and_connect_with_me():
 ```
 - 📲 https://www.linkedin.com/in/anthonynarlock/
 - 🐦 https://www.twitter.com/anthonynarlock/
-- ⭐️ https://www.anthonynarlock.com/
+- ⭐️ http://www.anthonynarlock.com/
 
 <!--
 **anthonynarlock/anthonynarlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
