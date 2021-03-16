@@ -6,7 +6,7 @@ def about_me():
 - 💻 I'm currently working on TamoStudy, which is an interactive Java application that implements a "Tamagotchi" and allows the user to focus on their work.
 - 🏫 Computer Science is my Major in University, with Minors in Japanese Language and Mathematics.
 - 🔥 I play games, read, edit, and code!
-- 📚 Currently Reading: The Subtle Art of Not Giving a #@%!.
+- 📚 Currently Reading: The Subtle Art of Not Giving a #@%! by: Mark Manson.
 - 🎮 Current favorite game: VALORANT.
 
 ```python
