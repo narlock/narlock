@@ -5,7 +5,7 @@ def about_me():
 ```
 - 💻 I'm currently working on TamoStudy, which is an interactive Java application that implements a "Tamagotchi" and allows the user to focus on their work.
 - 📓 I'm currently taking: Probability & Statistics for Engineering, Intro to Theatre, Public Speaking
-- 🏫 Computer Science is my Major in University, Minor in Mathematics.
+- 🏫 I am majoring in Computer Science, with a focus in Software Engineering, as well as minoring in Mathematics
 - 🔥 I play games, read, edit, and code!
 - 📚 Currently Reading: The Subtle Art of Not Giving a #@%! by: Mark Manson.
 - 🎮 Current favorite game: VALORANT.
