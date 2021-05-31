@@ -7,8 +7,8 @@ def about_me():
 - 📓 I'm currently taking: Intro to Theatre, Public Speaking
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering, as well as minoring in Mathematics
 - 🔥 I play games, read, edit, and code!
-- 📚 Currently Reading: The Subtle Art of Not Giving a #@%! by: Mark Manson.
-- 🎮 Current favorite game: VALORANT.
+- 📚 Currently Reading: Atomic Habits by James Clear
+- 🎮 Current favorite game: League of Legends
 
 ```python
 def contact_and_connect_with_me():
