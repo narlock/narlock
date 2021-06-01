@@ -8,7 +8,7 @@ def about_me():
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering, as well as minoring in Mathematics
 - 🔥 I play games, read, edit, and code!
 - 📚 Currently Reading: Atomic Habits by James Clear
-- 🎮 Current favorite game: League of Legends
+- 🎮 Current favorite game: osu!
 
 ```python
 def contact_and_connect_with_me():
