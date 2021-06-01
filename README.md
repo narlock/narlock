@@ -16,6 +16,7 @@ def contact_and_connect_with_me():
 - 📲 https://www.linkedin.com/in/anthonynarlock/
 - 🐦 https://www.twitter.com/anthonynarlock/
 - ⭐️ http://www.anthonynarlock.com/
+- 🚀 https://www.patreon.com/narlock
 
 <!--
 **anthonynarlock/anthonynarlock** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
