@@ -1,4 +1,4 @@
-### Hey, I'm Anthony - a student transferring to University of Minnesota - Twin Cities for Computer Science.
+### Hey, I'm Anthony - a student at University of Minnesota - Twin Cities studying Computer Science.
 
 ```python
 def about_me():
