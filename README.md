@@ -3,7 +3,6 @@
 ```python
 def about_me():
 ```
-- 💻 I'm currently working on TamoStudy- a work/study timer that implements a "tamagotchi"-like pet
 - 📓 I'm currently taking: Algorithms & Data Structures (Senior), Advanced Programming (Soph), Applied Linear Algebra (Senior)
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering, as well as minoring in Mathematics
 - 🔥 I play games, read, edit, and code!
