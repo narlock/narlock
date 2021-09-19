@@ -3,7 +3,7 @@
 ```python
 def about_me():
 ```
-- 📓 I'm currently taking: Algorithms & Data Structures (Senior), Advanced Programming (Soph), Applied Linear Algebra (Senior)
+- 📓 I'm currently taking: Algorithms & Data Structures, Advanced Programming, Applied Linear Algebra
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering, as well as minoring in Mathematics
 - 🔥 I play games, read, edit, and code!
 - 📚 Currently Reading: Atomic Habits by James Clear
