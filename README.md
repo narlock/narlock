@@ -6,7 +6,7 @@ def about_me():
 - 📓 I'm currently taking: Algorithms & Data Structures, Advanced Programming, Applied Linear Algebra
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering, as well as minoring in Mathematics
 - 🔥 I play games, read, edit, and code!
-- 📚 Currently Reading: Atomic Habits by James Clear
+- 📚 Currently Reading: Deep Work by Cal Newport
 - 🎮 Current favorite game: osu!
 
 ```python
