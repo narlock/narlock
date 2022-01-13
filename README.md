@@ -3,11 +3,11 @@
 ```python
 def about_me():
 ```
-- 📓 I'm currently taking: Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats
+- 📓 <b>Classes I'm taking:</b> Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering
 - 🔥 I play games, read, edit, and code!
-- 📚 Currently Reading: Digital Minimalism by Cal Newport
-- 🎮 Current favorite game: Animal Crossing: New Horizons
+- 📚 <b>Currently Reading:</b> Digital Minimalism by Cal Newport
+- 🎮 <b>Current favorite game:</b> Animal Crossing: New Horizons
 
 ```java
 public void printConnectWithMe()
