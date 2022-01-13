@@ -6,8 +6,8 @@ def about_me():
 - 📓 I'm currently taking: Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats
 - 🏫 I am majoring in Computer Science, with a focus in Software Engineering
 - 🔥 I play games, read, edit, and code!
-- 📚 Currently Reading: Ikigai by Hector Garcia & Francesc Miralles
-- 🎮 Current favorite game: osu!
+- 📚 Currently Reading: Digital Minimalism by Cal Newport
+- 🎮 Current favorite game: Animal Crossing: New Horizons
 
 ```java
 public void printConnectWithMe()
