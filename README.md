@@ -4,10 +4,9 @@
 def about_me():
 ```
 - 📓 <b>Classes I'm taking:</b> Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats
-- 🏫 I am majoring in Computer Science, with a focus in Software Engineering
-- 🔥 I play games, read, edit, and code!
 - 📚 <b>Currently Reading:</b> Digital Minimalism by Cal Newport
 - 🎮 <b>Current favorite game:</b> Animal Crossing: New Horizons
+- 🔥 I play games, read, edit, and code!
 
 ```java
 public void printConnectWithMe()
