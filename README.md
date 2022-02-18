@@ -2,7 +2,7 @@
 
 #### About me
 📓 <b>Classes I'm taking:</b> Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats <br>
-🎮 <b>Current favorite game:</b> Animal Crossing: New Horizons <br>
+🎮 <b>Current favorite game:</b> Pokemon Legends Arceus <br>
 🔥 I enjoy playing games, reading books, making friends, and coding! <br>
 
 #### Book recommendations
