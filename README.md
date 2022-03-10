@@ -1,7 +1,12 @@
 ### Hey, I'm Anthony - a student at University of Minnesota - Twin Cities studying Computer Science.
 
 #### About me
-📓 <b>Classes I'm taking:</b> Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats <br>
+📓 <b>Classes I'm taking:</b>
+   - CSCI 3081W Program Design and Development
+   - CSCI 4131 Internet Programming
+   - CSCI 4061 Intro to Operating Systems
+   - STAT 3021 Intro to Probability & Statistics
+
 🎮 <b>Current favorite game:</b> Pokemon Legends Arceus <br>
 🔥 I enjoy playing games, reading books, making friends, and coding! <br>
 
