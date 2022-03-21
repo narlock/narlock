@@ -7,7 +7,7 @@
    - CSCI 4061 Intro to Operating Systems
    - STAT 3021 Intro to Probability & Statistics
 
-🎮 <b>Current favorite game:</b> Pokemon Legends Arceus <br>
+🎮 <b>Current favorite game:</b> StepMania <br>
 🔥 I enjoy playing games, reading books, making friends, and coding! <br>
 
 #### Book recommendations
