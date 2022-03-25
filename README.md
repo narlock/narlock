@@ -11,7 +11,7 @@
 🔥 I enjoy playing games, reading books, making friends, and coding! <br>
 
 #### Book recommendations
-1. Atomic Habits - James Clear
+1. Can't Hurt Me - David Goggins
 2. Ikigai - Francesc Miralles & Hector Garcia
 3. Digital Minimalism - Cal Newport
 
