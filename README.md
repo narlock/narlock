@@ -1,11 +1,11 @@
 ### Hey, I'm Anthony - a student at University of Minnesota - Twin Cities studying Computer Science.
 
 #### About me
-📓 <b>Classes I'm taking:</b>
-   - CSCI 3081W Program Design and Development
-   - CSCI 4131 Internet Programming
-   - CSCI 4061 Intro to Operating Systems
-   - STAT 3021 Intro to Probability & Statistics
+📓 <b>Classes I'm taking in Fall</b>
+   - CSCI 5801 Software Engineering I
+   - CSCI 4511W Intro to Artifical Intelligence
+   - CSCI 4611 Programming Graphics and Games
+   - STAT 4707 Practice of Database Systems
 
 🎮 <b>Current favorite game:</b> StepMania <br>
 🔥 I enjoy playing games, reading books, making friends, and coding! <br>
