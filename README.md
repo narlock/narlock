@@ -7,5 +7,4 @@
 
 #### Connect with me!
 📺 https://www.youtube.com/narlock/ <br>
-🐦 https://www.twitter.com/anthonynarlock/ <br>
 🚀 https://www.patreon.com/narlock <br>
