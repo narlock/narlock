@@ -1,15 +1,4 @@
-### Hey, I'm Anthony - a student at University of Minnesota - Twin Cities studying Computer Science.
-
-#### About me
-📓 <b>Classes I'm taking in Fall</b>
-   - CSCI 5801 Software Engineering I
-   - CSCI 4511W Intro to Artifical Intelligence
-   - CSCI 4611 Programming Graphics and Games
-   - CSCI 4707 Practice of Database Systems
-   - CSCI 4211 Intro to Computer Networks
-
-🎮 <b>Current favorite game:</b> StepMania <br>
-🔥 I enjoy playing games, reading books, making friends, and coding! <br>
+### Hey, I'm narlock, a Computer Science student
 
 #### Book recommendations
 1. Can't Hurt Me - David Goggins
@@ -17,8 +6,6 @@
 3. Digital Minimalism - Cal Newport
 
 #### Connect with me!
-⭐️ http://www.anthonynarlock.com/ <br>
-📲 https://www.linkedin.com/in/anthonynarlock/ <br>
-📺 https://www.youtube.com/anthonynarlock/ <br>
+📺 https://www.youtube.com/narlock/ <br>
 🐦 https://www.twitter.com/anthonynarlock/ <br>
 🚀 https://www.patreon.com/narlock <br>
