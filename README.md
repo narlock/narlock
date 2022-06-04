@@ -1,9 +1,10 @@
-### Hey, I'm narlock, a Computer Science student
+### Hey, I'm narlock
 
 #### Book recommendations
-1. Can't Hurt Me - David Goggins
-2. Ikigai - Francesc Miralles & Hector Garcia
-3. Digital Minimalism - Cal Newport
+- Can't Hurt Me ○ David Goggins
+- Ikigai ○ Francesc Miralles & Hector Garcia
+- Digital Minimalism ○ Cal Newport
+- Bridge to Terabithia ○ Katherine Paterson
 
 #### Connect with me!
 📺 https://www.youtube.com/narlock/ <br>
