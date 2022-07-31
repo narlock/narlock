@@ -1,19 +1,13 @@
-### Hey, I'm Anthony - a student at University of Minnesota - Twin Cities studying Computer Science.
+### Hey, I'm narlock
 
-```python
-def about_me():
-```
-- 📓 <b>Classes I'm taking:</b> Program Design & Dev, Internet Programming, Intro to Operating Systems, Prob&Stats
-- 🏫 I am majoring in Computer Science, with a focus in Software Engineering
-- 🔥 I play games, read, edit, and code!
-- 📚 <b>Currently Reading:</b> Digital Minimalism by Cal Newport
-- 🎮 <b>Current favorite game:</b> Animal Crossing: New Horizons
+#### Book recommendations
+- Can't Hurt Me - David Goggins
+- Ikigai - Francesc Miralles & Hector Garcia
+- Digital Minimalism - Cal Newport
+- Bridge to Terabithia - Katherine Paterson
 
-```java
-public void printConnectWithMe()
-```
-- ⭐️ http://www.anthonynarlock.com/
-- 📲 https://www.linkedin.com/in/anthonynarlock/
-- 📺 https://www.youtube.com/anthonynarlock/
-- 🐦 https://www.twitter.com/anthonynarlock/
-- 🚀 https://www.patreon.com/narlock
+#### Connect with me!
+📺 [YouTube](https://www.youtube.com/narlock/) <br>
+🚀 [Patreon](https://www.patreon.com/narlock) <br>
+🐦 [Twitter](https://www.twitter.com/narlockSoftware) <br>
+📚 [Goodreads](https://www.goodreads.com/narlock)
