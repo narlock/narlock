@@ -7,5 +7,7 @@
 - Bridge to Terabithia - Katherine Paterson
 
 #### Connect with me!
-📺 https://www.youtube.com/narlock/ <br>
-🚀 https://www.patreon.com/narlock <br>
+📺 [YouTube](https://www.youtube.com/narlock/) <br>
+🚀 [Patreon](https://www.patreon.com/narlock) <br>
+🐦 [Twitter](https://www.twitter.com/narlockSoftware) <br>
+📚 [Goodreads](https://www.goodreads.com/narlock)
