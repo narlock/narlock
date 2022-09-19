@@ -5,33 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>narlock</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="snowflakes" class="snowflakes" aria-hidden="true"></div>
+    <script src="js/index.js"></script>
     <div id="headerContainer">
         <header id="header">
             <nav id="mainNavigation">
                 <ul>
-                    <li><a href="blog.narlock.dev" target="_blank">dev blog</a></li>
-                    <li><a href="tamostudy.narlock.dev" target="_blank">TamoStudy</a></li>
-                    <li><a href="kaizen.narlock.dev" target="_blank">Kaizen</a></li>
+                    <li><a href="blog">dev blog</a></li>
+                    <li><a href="http://tamostudy.narlock.dev">TamoStudy</a></li>
+                    <li><a href="http://kaizen.narlock.dev">Kaizen</a></li>
                 </ul>
             </nav>
-            <div id="socialsHeader">
+            <nav id="socialsHeader">
                 <ul>
                     <!-- Put socials here with svg icon -->
+                    <li><a href="mailto:contact@narlock.dev" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="http://twitter.com/narlockdev" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://youtube.com/narlock" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <li><a href="http://github.com/narlock" target="_blank"><i class="fa fa-github"></i></a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
     </div>
     <div id="heroContainer">
-        <img src="" alt="narlock profile picture">
-        <p>narlock</p>
+        <div class="fade-in">
+            <img src="assets/logo.png" alt="narlock profile picture">
+        </div>
+        <div class="typewriter">
+            <h1>narlock</h1>
+        </div>
+        <div class="fade-in-other">
+            <p>engineering, gaming, learning</p>
+        </div>
+        
     </div>
-    <div id="footerContainer">
-        <footer>
-            <!-- TODO -->
-        </footer>
+    <div class="myImage">
+        <img class="myImage absolute bottom-0 max-w-[16rem] mx-auto left-0 right-0 md:left-auto" src="assets/me.png" alt="">
     </div>
+    
 </body>
 </html>
