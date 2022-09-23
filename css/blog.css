@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+* {
+    font-family: "Source Code Pro";
+}
+
+body {
+    background: rgb(50, 50, 50);
+}
+
+nav {
+    width: 40rem;
+    padding: 15px;
+    margin: 0 auto;
+    border-bottom: 2px solid orange;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    color: white;
+    display: block;
+    width: 60px;
+    transition: all 0.5s ease;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-left ul li {
+    float: left;
+}
+
+
+.nav-right ul li {
+    font-size: xx-large;
+    float: right;
+}
+
+.logoImage {
+    width: 80%;
+    height: auto;
+}
+
+a:hover {
+    color: orange;
+}
+
+#goHome {
+    display: none;
+}
