@@ -32,6 +32,9 @@ nav a {
 }
 
 .nav-left ul li {
+    color:white;
+    font-weight: bold;
+    font-size: xx-large;
     float: left;
 }
 
