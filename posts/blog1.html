@@ -4,9 +4,315 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>blog 1</title>
 </head>
 <body>
-    This is my first blog!
+    <nav class="nav">
+        <div class="nav-left">
+            <ul>
+                <!-- <li><a href="/narlock"><img src="./assets/logo.png" alt="logo" class="logoImage" onmouseover="showHome()" onmouseleave="hideHome()"></a></li>
+                <li class="goHome" id="goHome"><a href="/narlock">home</a></li> -->
+                <li><a href="/narlock"><img src="../assets/logo.png" alt="logo" class="logoImage" onmouseover="showHome()" onmouseleave="hideHome()"></a></li>
+                <li>narlock</li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="mailto:contact@narlock.dev" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="http://twitter.com/narlockdev" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://youtube.com/narlock" target="_blank"><i class="fa fa-youtube"></i></a>
+                <li><a href="http://github.com/narlock" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="blogPost">
+    <h1 id="understanding-the-basic-concepts-of-computer-networking">Understanding the basic concepts of Computer Networking</h1>
+    <p id="date">9/23/2022, ~2607 words, 10 images</p>
+    <strong>Purpose</strong>: To explain the basic concepts of Computer Networking. I made this post to help myself understand the concepts to the point where I can explain the concepts to others. A lot of the information I pull into this post come from how I was instructed in my university.</li>
+    <h2 id="what-is-a-network">What is a network?</h2>
+    <ul>
+    <li>Recursively, a network can be defined as two or more nodes connected by a link, or two or more networks connected by two or more nodes.</li>
+    <li>Namely, we can just saw that a network is two or more computers or computing devices that are connected to share resources.</li>
+    
+    <img src="../assets/blog/1/basicFormOfNetwork.png" alt="basicFormOfNetwork image" style="width: 90%; height: auto;">
+
+    <li>Networks have many key features, including providing certain services like transporting goods, mail, information, or data. Sharing resources, meaning many people can be on a network at the same time - use it concurrently! The basic network building blocks are nodes, the active entities, which process and transfer goods and data, and links, the passive medium, which serve as the passive &quot;carrier&quot; of goods and data. A network is typically &quot;multi-hop&quot;, meaning two-endpoints cannot directly reach each other. Need other nodes/entities to relay.</li>
+    <li>Let&#39;s talk about the Internet building blocks<ul>
+    <li><strong>Nodes</strong>, are PCs, special-purpose hardware. They are hosts, also referred to as end systems. Simply put, it is any physical device within a network that is able to send, receive, or forward information.<ul>
+    <li>Examples of nodes include your own personal computer, modems (modulator-demodulator for converting data), switches, servers, printers.</li>
+    <li>These are devices that can connect over WiFi or Ethernet (and more...). A network consisting of three computers, a printer, and two other wireless devices has six total nodes.</li>
+    <li>Nodes within a computer network must have some form of identification, like an IP address or MAC address in order for other network devices to recognize them.</li>
+    <li>What does a network node do?<ul>
+    <li>&quot;Network nodes are the physical pieces that make up a network. They usually include any device that both receives and then communicates information. But they might receive and store data, relay information elsewhere, or create and send data instead.&quot;</li>
+    <li>&quot;For example, a computer node might back up files online or send an email, but it can also stream videos and download other files. A network printer can receive print requests from other devices on the network, while a scanner can send images back to the computer. A router determines which data goes to whcih devices that request file downloads within a system, but it can also send requests out to the public Internet.&quot;</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li><strong>Links</strong> are simply the connection between two nodes. Nodes can be connected through many ways including coax cable, optical fiber, wireless.<ul>
+    <li>Point-to-point or Multiple Access (Inter-network)</li>
+    
+    <img src="../assets/blog/1/pointToPointVsInterNetwork.png" alt="pointToPointVsInterNetwork image" style="width: 50%; height: auto;">
+
+    <li><strong>Physical Media</strong><ul>
+    <li>Physical Link: Transmitted data bit propagates across link</li>
+    <li>Guided Media: signals propagate in solid media: copper, fiber.</li>
+    <li>Unguided Media: signals propagate freely, like radio.</li>
+    <li>Coaxial Cable: Wire (signal carrier), within a wire (shield), used in baseband (single channel) and broadband (multiple channel).</li>
+    <li>Twisted Pair (TP): two insulated copper wires. CAT3 and CAT5 used for Ethernet</li>
+    <li>Fiber Optic Cable: Glass fiber carrying light pulses. It has high speeds and low error rate.</li>
+    </ul>
+    </li>
+    <li><strong>Physical Media: Radio</strong><ul>
+    <li>Signal carried in electromagnetic spectrum</li>
+    <li>No &#39;physical&#39; wire. It is bidirectional</li>
+    <li>Obstruction by objects, interference.<ul>
+    <li>Types include: Microwave, LAN, WAN, Satellite...</li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li>There are many types of networks<ul>
+    <li><strong>LAN</strong>: Local Area Network, contained in one building or one room</li>
+    <li><strong>WAN</strong>: Wide Area Network, spans a larger geographical area</li>
+    <li>MAN: Metropolitan Area Network, little larger than WAN</li>
+    <li>CAN: Controller Area Network, typically for computer mechanical stuff, they can talk over a controller area network...</li>
+    <li>PAN: Personal Area Network (like your phone and smartwatch communicating or your computer and a bluetooth device)</li>
+    </ul>
+    </li>
+    <li>How is this connected?<ul>
+    <li>Let&#39;s take a look at our smartphone for example. Our smartphone will most likely have 3 radios inside of it.<ul>
+    <li>Bluetooth radio: connects you to your smartwatch, or speaker, etc.</li>
+    <li>WiFi radio: connects you to your ISP</li>
+    <li>4G/5G radio: connects you to Verizon (or whatever)</li>
+    </ul>
+    </li>
+    <li>Not only is your phone now in your pocket connected to a global network (Verizon), but it is connected to all sorts of other networks...</li>
+    </ul>
+    </li>
+    </ul>
+    <h2 id="what-are-the-issues-in-computer-networking">What are the issues in computer networking?</h2>
+    <ul>
+    <li><em>Network is a shared resource</em>: Provides services for many people at the same time. Carry bits/information for many people at the same time.</li>
+    <li><em>Switching and multiplexing</em>: How to share resources among multiple users, and transfer data from one node to another.</li>
+    <li><em>Naming and addressing</em>: How to find name/address of the party (or parties) you would like to communicate with. An address is a byte-string that identifies a node: unicast, multicast, and broadcast addresses.</li>
+    <li><em>Routing and (end-to-end) forwarding</em>: Routing is the process of determining how to send packets towards the destination based on its address.</li>
+    </ul>
+    <h3 id="what-is-the-internet-whats-special-about-the-internet">What is the Internet? What&#39;s special about the Internet?</h3>
+    <ul>
+    <li>To provide a more &quot;nuts-and-bolts&quot; view of the internet. It represents the &quot;network of networks&quot;... Interconnected ISPs. The Internet utilizes protocols for controlling, sending, and receiving messages through (TCP, IP, HTTP, Skype, etc.). To provide a more service view, the Internet is the infrastructure that provides services to applications: web, email, gaming, social networks.</li>
+    <li>The Internet is based off the notion of packet switching. Enables statistical multiplexing, better utilization of network resources for transfer of &#39;bursty&#39; data traffic.</li>
+    <li>Internet key organizational/architectural principle: &quot;smart&quot; end systems + &quot;dumb&quot; networks.</li>
+    </ul>
+    <h4 id="switching-and-multiplexing">Switching and Multiplexing</h4>
+    <ul>
+    <li>A network is a <em>shared</em> resource that provides services to many people at the same time. It carries many bits/information for many people at the same time. Switching and multiplexing helps this get done.<ul>
+    <li><strong>Switching</strong> determines how to deliver information from point A to point B.</li>
+    <li><strong>Multiplexing</strong> determines how to share resources among many users.</li>
+    </ul>
+    </li>
+    <li>Switching and multiplexing are closely related with one another.</li>
+    </ul>
+    <h4 id="what-is-switching">What is switching?</h4>
+    <ul>
+    <li>Two or more devices connect to form a network. In a network, the devices should be able to do one-to-one communication. For this, we can set up point-to-point connections among them via mesh topology or star topology. However, this becomes impractical when the number of computers increases. </li>
+    <li>A solution to this problem is <strong>switching</strong>, where devices called <em>switches</em>, interlink to each other, are used to set up temporary point-to-point connections among the end systems. End systems connect directly to the switches.</li>
+    </ul>
+    <h2 id="switching-strategies">Switching Strategies</h2>
+    <ul>
+    <li>To reiterate, <strong>switching</strong> determines how to deliver information from point A to point B. More notably, from a node to another node.</li>
+    <li>In computer networks, <strong>switching</strong> is a process to forward packets coming in from one port to a port leading towards the destination. When data comes on a port is called ingress, and when data leaves a port or goes out it is called egress. A communication system may include number of switches and nodes.</li>
+    <li>Switching can be divided into two major categories<ul>
+    <li><strong>Connectionless</strong>: The data is forwarded on behalf of forwarding tables. No previous handshaking is required and acknoledgements are optional.</li>
+    <li><strong>Connection oriented</strong>: Before switching data to be forwarded to destination, there is a need to pre-establish circuit along the path between both endpoints. Data is then forwarded on that circuit. After the transfer is complete, circuits can be kept for future use or can be turned down immediately.</li>
+    </ul>
+    </li>
+    <li>We can make conclusions to simply say that the purpose of switching is to provide communication from nodes. With this communication, we can create the services that make up the Internet and more.</li>
+    </ul>
+    <h3 id="circuit-switching">Circuit Switching</h3>
+    <ul>
+    <li>When two nodes communicate with each other over a dedicated communication path, it is called circuit switching. Applications that go through circuit switching may go through three phases: first establishing a circuit, then trasfering the data, then disconnecting the circuit.</li>
+    <li>Network resources are &quot;divided into pieces&quot;, pieces are allocated to calls. A resource pieces is <em>idle</em> if not used by owning call. This division is done through FDM, TDM, CDM.</li>
+    <li>Under circuit switching, all the resources needed by a call are dedicated to that call for the duration of the call. This is used in telephone networks. The good thing about circuit switching is it&#39;s guarenteed service. You are assured of the required resources for the entire duration of the call. The bad thing is that resources are not utilized efficiently. There may be silent periods during the talk, but the dedicated network resources cannot be used by other calls. Whether you are shouting or silent you consume the same amount of network resources.</li>
+    <li>What happens when the resource demands exceed the resources available? If we say there is only one circuit/link, let&#39;s say A is currently occupying the circuits between C-D, and D-E. Now suppose B wants to call E, then B is blocked. Once call is admitted, you are guarenteed to have good quality and service.</li>
+    </ul>
+    <h4 id="circuit-switching-explained">Circuit Switching explained</h4>
+    <ul>
+    <li>How circuit switching works<ul>
+    <li>Suppose there is a restaurant that accepts reservation. We can make a reservation at this restaurant and then when we show up we can be immediately seated and place our order. Circuit switching is analogous to this restaurant. This means that resources are reserved for the communication session.</li>
+    
+    <img src="../assets/blog/1/circuitSwitching.png" alt="circuitSwitching image" style="width: 90%; height: auto;">
+
+    <li>Circuit switching takes place at the physical layer.</li>
+    </ul>
+    </li>
+    </ul>
+    <h5 id="frequency-division-multiplexing-fdm-vs-time-division-multiplexing-tdm">Frequency Division Multiplexing (FDM) vs Time-Division Multiplexing (TDM)</h5>
+    <ul>
+    <li><strong>Multiplexing</strong> in networking means multiple signals are combined together and thus travel simultaneously on one link. The purpose of multiplexing is sharing.</li>
+    
+    <img src="../assets/blog/1/fdmVsTdm.png" alt="fdmVsTdm image" style="width: 90%; height: auto;">
+
+    <li><strong>TDM</strong> is transmitting different users&#39; digital signals over one link by dividing time into slots or intervals and assigning them equally among these users.<ul>
+    
+    <img src="../assets/blog/1/tdm.png" alt="tdm.png" style="width: 90%; height: auto;">
+
+    </ul>
+    </li>
+    <li><strong>FDM</strong> deals with analog signals, not digital signals.<ul>
+    
+    <img src="../assets/blog/1/fdm.png" alt="fdm.png" style="width: 90%; height: auto;">
+
+    </ul>
+    </li>
+    <li>When do we use TDM and FDM?<ul>
+    <li>We need to know about baseband and broadband. Baseband deals with digital signals. Baseband systems can only transmit one signal at a time. Digital signals occupy the enttire bandwidth which means baseband systme requires an exclusive use of the channel&#39;s capacity. TDM and Statistical Multiplexing is used in baseband.</li>
+    <li>Broadband transmissions deal with analog signals, which are in form of optical waves. Broadband allows for multiple transmissions at the same time - they can share one channel by sharing different frequency range.</li>
+    </ul>
+    </li>
+    </ul>
+    <h4 id="communication-in-circuit-switched-network">Communication in circuit-switched network</h4>
+    <ul>
+    <li>Communication in a circuit-switched network involves three phases. The connection setup phase, the data transfer phase, and the connection teardown phase.<ol>
+    <li>Connection setup phase</li>
+    <li>Data transfer phase</li>
+    <li>Connection teardown phase</li>
+    </ol>
+    </li>
+    
+    <img src="../assets/blog/1/circuitSwitchingPhases.png" alt="circuitSwitchingPhases image" style="width: 90%; height: auto;">
+
+    <li>Suppose a person is talking to his friend. After some time, both of them stop talking for 5 minutes. For these 5 minutes, the reserved resources are idle, and cannot be used by any other ongoing communication because they are reserved for their conversation only. Due to this reason, circuit-switched networks have low efficiency. However, the delay in this type of network is minimal because there is no waiting at the switches as the circuit is already set up before data transfer. The delay is only due to the time needed to set up the connection, transfer data, and terminating the circuit.</li>
+    </ul>
+    <h3 id="packet-switching">Packet Switching</h3>
+    <ul>
+    <li>Communication between two nodes such that an entire message is broken down into smaller chunks called packets. The switching information is added in the header of each packet and transmitted independently.</li>
+    <li>Each end-to-end &quot;data stream&quot; divided into packets. Users A and B packets share network resources. Each packet uses full link bandwidth. Resources used as needed.</li>
+    <li>Resource Contention:<ul>
+    <li>Aggregate resource demand can exceed amount available</li>
+    <li>Congestion: packets queue, wait for a link use.</li>
+    <li>Store and forward: packets move one hop at a time.</li>
+    <li>A node receives complete packet before forwarding.</li>
+    <li>Packets may suffer delay or losses!</li>
+    </ul>
+    </li>
+    </ul>
+    <h4 id="what-is-statistical-multiplexing-why-is-this-important">What is statistical multiplexing? Why is this important?</h4>
+    <ul>
+    <li>Time division multiplexing, BUT <em>on demand</em> rather than fixed.</li>
+    <li>Reschedule link on a per-packet basis.</li>
+    <li>Packets from different sources interleaved on the link.</li>
+    <li>Buffer packets that are <em>contending</em> for the link.</li>
+    <li>Buffer buildup is called <strong>congestion</strong>.</li>
+    <li>This is <strong>packet switching</strong>, used in computer networks.</li>
+    <li><strong>Statistical multiplexing</strong> analyzes statistics related to the workload, need or priority and determines on-the-fly how much time each user should get.<ul>
+    
+    <img src="../assets/blog/1/statisticalMultiplexing.png" alt="statisticalMultiplexing image" style="width: 90%; height: auto;">
+
+    </ul>
+    </li>
+    </ul>
+    <h4 id="packet-switching-explained">Packet Switching explained</h4>
+    <ul>
+    <li>How packet switching works<ul>
+    <li>Suppose there is a restaurant that does NOT accept reservation. So when you arrive at the restaurant, you may have to wait in queues before you can be seated. This means that resources are not reserved in packet switching.</li>
+    </ul>
+    </li>
+    <li>Applications like Google Chrome, Skype, Outlook, that require Internet to function are called <em>network applications</em>. </li>
+    <li>In a network application, the end system (or host) needs to send data to each other over the Internet. This data can be an image, audio, video or a text file. Instead of sending the whole file at once, it is divided into small data untis at the source and are called <strong>packets</strong>. These packets, then, move over a network of packet switches to reach the destination host.</li>
+    <li>Packet switches can be routers or link-layer switches.</li>
+    <li>This method of data transmission over a network of packet switches in the form of small data units or packets is called <strong>packet switching</strong>.</li>
+    
+    <img src="../assets/blog/1/packetSwitching.png" alt="packetSwitching image" style="width: 90%; height: auto;">
+
+    
+    <img src="../assets/blog/1/queuingDelayAndPacketLoss.png" alt="queuingDelayAndPacketLoss image" style="width: 90%; height: auto;">
+
+    <li>We have learned so far that in packet switching, the packet switches receive packets at one communication link and fowards it to another communication link. During this process, it may suffer store-and-forward delay, queuing delay, or packet loss. But how the packet switches know to whcih communication link the incoming packet should be forwarded? Here, forwarding tables come into the picture.<ul>
+    <li>On the Internet, every device has a unique address known as an IP address. When Host A sends a packet to Host B, it maintains the IP address of Host B in the packet header. Every router has a forwarding table. It maps the portion of the IP address or network address to the router&#39;s link interface. When a router receives a packet, it matches the prefix of the packet&#39;s destination address with the entires present in the table and forwards the packet to the corresponding outbound link.</li>
+    <li>Forwarding tables are updated automatically with the helping of <em>routing protocols</em>.</li>
+    </ul>
+    </li>
+    <li>Packet switching occurs in the same way as a person used to go from one place to another if he does not know the route to the destination.</li>
+    </ul>
+    <h3 id="how-do-packet-switching-and-circuit-switching-comparediffer">How do packet switching and circuit switching compare/differ?</h3>
+    <ul>
+    <li>Packet switching allows more users to use network.</li>
+    </ul>
+    <table class="stable">
+    <thead>
+    <tr>
+    <th>Item</th>
+    <th>Circuit-switched</th>
+    <th>Packet-switched</th>
+    </tr>
+    </thead>
+    <tbody><tr>
+    <td>Dedicated &quot;copper&quot; path</td>
+    <td>yes</td>
+    <td>no</td>
+    </tr>
+    <tr>
+    <td>Bandwidth available</td>
+    <td>fixed</td>
+    <td>dynamic</td>
+    </tr>
+    <tr>
+    <td>Potentially wasted bandwidth</td>
+    <td>yes</td>
+    <td>no (not really)</td>
+    </tr>
+    <tr>
+    <td>Store-and-foward transmission</td>
+    <td>no</td>
+    <td>yes</td>
+    </tr>
+    <tr>
+    <td>Each packet/bit always follows the same route</td>
+    <td>yes</td>
+    <td>no necessarily</td>
+    </tr>
+    <tr>
+    <td>Call setup</td>
+    <td>required</td>
+    <td>not needed</td>
+    </tr>
+    <tr>
+    <td>When can congestion occur</td>
+    <td>at setup time</td>
+    <td>on every packet</td>
+    </tr>
+    <tr>
+    <td>Effect of congestion</td>
+    <td>call blocking</td>
+    <td>queuing delay</td>
+    </tr>
+    </tbody></table>
+    <ul>
+    <li>Is packet switching always preferable? It depends.<ul>
+    <li>Ideally we want circuit switching type service with the efficiency of packet switching. Computer networks use packet switching.</li>
+    </ul>
+    </li>
+    <li>Packet switching is great for bursty data, resource sharing, simpler, no call setup required. However, we get excessive congestion through packet delay and packet loss. Protocols are needed for reliable data transfer and congestion control.</li>
+    </ul>
+
+    </div>
+    <div class="code" >
+        
+    </div>
+    <code class="language-javascript">
+        document.querySelector('hello');
+    </code>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
