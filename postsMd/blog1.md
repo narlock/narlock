@@ -1,5 +1,5 @@
 # Understanding the basic concepts of Computer Networking
-- 9/23/2022, ~2607 words, 10 images
+- 9/23/2022, 
 - **Purpose**: To explain the basic concepts of Computer Networking. I made this post to help myself understand the concepts to the point where I can explain the concepts to others. A lot of the information I pull into this post come from how I was instructed in my university.
 
 ## What is a network?

@@ -81,6 +81,14 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+#blogPost a {
+    color: yellow;
+}
+
+#blogPost a:hover {
+    color: red;
+}
+
 strong {
     color: rgb(59, 200, 255)
 }
