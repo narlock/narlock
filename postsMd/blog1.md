@@ -155,27 +155,7 @@
     - Ideally we want circuit switching type service with the efficiency of packet switching. Computer networks use packet switching.
 - Packet switching is great for bursty data, resource sharing, simpler, no call setup required. However, we get excessive congestion through packet delay and packet loss. Protocols are needed for reliable data transfer and congestion control.
 
-## Network Architecture
 
-### Organizational Principles
-
-### Internet Protocol Stack
-
-#### Application Layer
-
-#### Transport Layer
-
-#### Network Layer
-
-#### Link Layer
-
-#### Physical Layer
-
-### Protocols and Services
-
-#### What is a protocol?
-
-### Internet Structure: network of networks
 
 <br>
 

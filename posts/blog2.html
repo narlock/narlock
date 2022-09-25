@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>blog 1</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <ul>
+                <!-- <li><a href="/narlock"><img src="./assets/logo.png" alt="logo" class="logoImage" onmouseover="showHome()" onmouseleave="hideHome()"></a></li>
+                <li class="goHome" id="goHome"><a href="/narlock">home</a></li> -->
+                <li><a href="/narlock"><img src="../assets/logo.png" alt="logo" class="logoImage" onmouseover="showHome()" onmouseleave="hideHome()"></a></li>
+                <li>narlock</li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="mailto:contact@narlock.dev" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="http://twitter.com/narlockdev" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://youtube.com/narlock" target="_blank"><i class="fa fa-youtube"></i></a>
+                <li><a href="http://github.com/narlock" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="blogPost">
+        <h1 id="organization-of-computer-networks">Organization of Computer Networks</h1>
+        <p id="date">9/25/2022, 1293 words, 9 images</p>
+        <p><strong>Purpose</strong>: To explain the organization and architecture behind computer networks and why we use layered architecture. This post will also touch on each of the layers in the IP stack and explain their purpose.</p>
+        <h2 id="network-architecture">Network Architecture</h2>
+        <ul>
+        <li>Architecture: functional division and functional placement.</li>
+        <li>&quot;smart&quot; end systems and &quot;dumb&quot; networks<ul>
+        <li>&quot;smart&quot; end systems/edges: servers, PCs, mobile devices... Diverse and ever-emerging new applications.</li>
+        <li>&quot;dumb&quot; network (core): simple, packet-switched, store-forward, connectionless &quot;datagram&quot; service, with core functions including global addressing, routing &amp; forwarding.</li>
+        </ul>
+        </li>
+        
+        <img src="../assets/blog/2/internetHourglass.png" alt="internetHourglass image" style="width: 90%; height: auto;">
+
+        <img src="../assets/blog/2/smartEndsystemDumbNetwork.png" alt="smartEndsystemDumbNetwork image" style="width: 90%; height: auto;">
+
+        </ul>
+        <h3 id="overview-of-network-structure">Overview of Network Structure</h3>
+        <ul>
+        <li>&quot;Horizontal View&quot;<ul>
+        <li><strong>Network Edge</strong>: Applications and Hosts</li>
+        <li><strong>Network Core</strong>: Routers, network of networks.</li>
+        <li><strong>Access Networks, Physical Media</strong>: Communication links</li>
+        </ul>
+        </li>
+        <li>&quot;Nuts and Bolts View&quot;<ul>
+        <li>Millions of connected computing devices (hosts = end systems).</li>
+        <li>Running network applications</li>
+        <li>Communication links: fiber, copper, radio, satellite. Transmission rate = bandwidth.</li>
+        <li>Routers forward packets.</li>
+        </ul>
+        </li>
+        </ul>
+        <h3 id="the-network-edge">The Network Edge</h3>
+        <ul>
+        <li>End Systems (hosts): run application programs (web, email) at &quot;edge of network&quot;</li>
+        <li>Client/Server model: Client host requests, receives service from always-on web server. (web browser/server, email Client/server)</li>
+        <li>Peer to Peer model: minimal (or no) use of dedicated servers. (e.g. Skype, BitTorrent)</li>
+        <li><strong>Goal for network edge connection services</strong>: data transfer between end systems.</li>
+        <li><strong>Connection Oriented Service</strong>:<ul>
+        <li>Handshaking (setup) prepare for data transfer ahead of time.</li>
+        <li>Hello, hello back human protocol.</li>
+        <li>Set up &quot;state&quot; in two communicating hosts</li>
+        <li><strong>TCP</strong>: transmission control protocol<ul>
+        <li>Reliable, in-order byte-stream data transfer.<ul>
+        <li>Loss: acknoledgements and retransmissions.</li>
+        </ul>
+        </li>
+        <li>Flow control: Sender won&#39;t overwhelm receiver</li>
+        <li>Congestion-control: senders &quot;slow down sending rate&quot; when network is congested.</li>
+        </ul>
+        </li>
+        <li>Internet&#39;s connection-oriented service.</li>
+        </ul>
+        </li>
+        <li><strong>Connectionless Service</strong>:<ul>
+        <li><strong>UDP</strong>: user datagram protocol<ul>
+        <li>Connectionless</li>
+        <li>Unreliable data transfer</li>
+        <li>No flow control</li>
+        <li>No congestion control</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        <table class="stable">
+        <thead>
+        <tr>
+        <th>TCP</th>
+        <th>UDP</th>
+        </tr>
+        </thead>
+        <tbody><tr>
+        <td>HTTP (Web)</td>
+        <td>Streaming Media</td>
+        </tr>
+        <tr>
+        <td>FTP (file transfer)</td>
+        <td>Teleconferencing</td>
+        </tr>
+        <tr>
+        <td>SMTP (email)</td>
+        <td>DNS</td>
+        </tr>
+        <tr>
+        <td>Flash Videos</td>
+        <td>Internet telephony</td>
+        </tr>
+        <tr>
+        <td>DASH stream videos</td>
+        <td></td>
+        </tr>
+        <tr>
+        <td>Telnet (remote login)</td>
+        <td></td>
+        </tr>
+        </tbody></table>
+        <h3 id="the-network-core">The Network Core</h3>
+        <ul>
+        <li>Mesh of interconnected routers <em>shared</em> by many users.</li>
+        <li><strong>On the Internet Edge</strong><ul>
+        <li>Large number of users (mobile and stationary)</li>
+        <li>Large number of &quot;dumb&quot; or &quot;smart&quot; devices and appliances</li>
+        <li>Some &quot;always-on&quot;, high-speed connection</li>
+        <li>Other intermittent connectivity with varying bandwidth</li>
+        <li>Diverse applications and services</li>
+        <li>Heterogeneous technologies</li>
+        </ul>
+        </li>
+        <li><strong>Within the Internet &quot;Cloud&quot;</strong><ul>
+        <li><em>Network core</em>: Big ISPs (and cellular providers) with large span, as well as medium and smaller ISPs, and the &quot;other end/edge&quot;: Big content providers with huge data centers.</li>
+        <li>High bandwidth, dense and rich topology</li>
+        <li>Enormous computing and storage capacities to support cloud, mobile computing</li>
+        </ul>
+        </li>
+        </ul>
+        <h2 id="organizational-principles-of-network-architecture">Organizational Principles of Network Architecture</h2>
+        <ul>
+        <li><strong>Networks are complex!</strong>, they have many pieces: hosts, routers, links of various media, hardware/software, applications, protocols...<ul>
+        <li>&quot;blue prints&quot; (or principles) regarding functional division and functional placement...</li>
+        </ul>
+        </li>
+        <li><strong>Layers</strong>: Each layer implements a service (via its own internal-layer actions, relying on services provided by layer below)<ul>
+        <li>Why layering?<ul>
+        <li>We are dealing with a very complex system!</li>
+        <li>Explicit structure allows identification, relationship of complex system pieces.</li>
+        <li>Modularization eases maintenance, updating of system.<ul>
+        <li>Change the implementation of layer&#39;s service transparent to the rest of the system</li>
+        <li>(e.g. change in gate procedure doesn&#39;t effect the rest of the system)</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        <li>Layering simplifies the architecture of a complex system.<ul>
+        <li><em>Advantages</em>: modularization eases maintenance and updating. Hides lower layer complexity/implementation details from higher layers.</li>
+        <li>Possible drawbacks: <ul>
+        <li>possible duplication of functionality between layers</li>
+        <li>Error recovery at link layer and transport layer.</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        <h3 id="internet-protocol-stack">Internet Protocol Stack</h3>
+        <ul>
+        
+        <img src="../assets/blog/2/ipStack.png" alt="ipStack image" style="width: 90%; height: auto;">
+
+        </ul>
+        <h4 id="application-layer">Application Layer</h4>
+        <ul>
+        <li>Process to process communication. ALL layers exist to support this layer.<ul>
+        <li>SMTP, FTP, HTTP, ...</li>
+        </ul>
+        </li>
+        </ul>
+        <h4 id="transport-layer">Transport Layer</h4>
+        <ul>
+        <li>End to end data delivery through <strong>TCP</strong> (connection oriented) or <strong>UDP</strong> (connectionless).</li>
+        </ul>
+        <h4 id="network-layer">Network Layer</h4>
+        <ul>
+        <li>Global naming and addressing (<strong>IPv4, IPv6</strong>), routing (build routing tables), forwarding packets hop-by-hop across network. Avoidance of congested/failed links, traffic engineering...</li>
+        </ul>
+        <h4 id="link-layer">Link Layer</h4>
+        <ul>
+        <li>Data transfer between &quot;neighboring elements&quot; (<strong>Ethernet, WiFi, PPP</strong>). Framing and error/flow control. Media access control.</li>
+        </ul>
+        <h4 id="physical-layer">Physical Layer</h4>
+        <ul>
+        <li>Electrical engineering stuff... Encoding/decoding information (bits) into physical medcdia, modulating &amp; transmitting raw bits (0/1) over wire.</li>
+        </ul>
+        <h4 id="layered-architecture">Layered Architecture</h4>
+        <ul>
+        <li>Layering simplifies the architecture of a complex system.</li>
+        <li>Layer N relies on <em>services</em> from layer N-1 to provide service to layer N+1.</li>
+        <li><em>Interfaces</em> define the services offered.</li>
+        <li>Service required from a lower layer is independent of its implementation<ul>
+        <li>Layer N change does not affect other layers</li>
+        <li>Information/Complexity hiding</li>
+        <li>Similar to Object-oriented methodology</li>
+        </ul>
+        </li>
+        
+        <img src="../assets/blog/2/layerArchitecture.png" alt="layerArchitecture image" style="width: 60%; height: auto;">
+
+        </ul>
+        <h3 id="protocols-and-services">Protocols and Services</h3>
+        <ul>
+        <li>Protocols are used to implement services.<ul>
+        <li>Peering entities in layer N provide service by communicating with each other using the service provided by N-1.</li>
+        </ul>
+        </li>
+        <li>Logical vs. physical communication<ul>
+        
+        <img src="../assets/blog/2/logicalVsPhysicalComm.png" alt="logicalVsPhysicalComm image" style="width: 90%; height: auto;">
+
+        </ul>
+        </li>
+        </ul>
+        <h4 id="what-is-a-protocol">What is a protocol?</h4>
+        <ul>
+        <li>A <strong>protocol</strong> is a set of rules or procedures for transmitting data between devices. In order for devices to exchange information, there must be a preexistitng agreement as to how the information will be structured and how each side will send and receive it. <ul>
+        <li>Protocols define format, order of messages sent and received among network entities, and actions taken on message transmission, reciept.</li>
+        </ul>
+        </li>
+        <li><em>Human protocols</em>: &quot;What&#39;s the time?&quot;, &quot;I have a question&quot;, Introductions...</li>
+        <li><em>Network protocols</em>:<ul>
+        <li>TCP/IP, HTTPS, SMTP, DNS, ...</li>
+        <li>All communication activity in Internet governed by protocols.</li>
+        </ul>
+        </li>
+    
+        <img src="../assets/blog/2/humanNetworkProtocol.png" alt="humanNetworkProtocol image" style="width: 90%; height: auto;">
+
+        <li>Protocols define the agreement between peering entities, this means the format and the meaning of messages exchanged.</li>
+        </ul>
+        <h5 id="protocol-packets">Protocol Packets</h5>
+        <ul>
+        <li>Protocol data units (PDUs): packets exchanged between peer entities</li>
+        <li>Service data units (SDUs): packets handed to a layer by an upper layer</li>
+        <li>Data at one layer is encapsulated in packet at a lower layer<ul>
+        <li>Envelope within envelope: PDU = SDU + (optional) header or trailer</li>
+        </ul>
+        </li>
+        
+        <img src="../assets/blog/2/protocolPacket.png" alt="protoclPacket image" style="width: 60%; height: auto;">
+
+        </ul>
+        <h3 id="internet-structure-network-of-networks">Internet Structure: network of networks</h3>
+        <ul>
+        <li>Roughly heirarchical.</li>
+        <li><strong>Tier 1 ISPs</strong>, at the center. (Verizon, Sprint, AT&amp;T). National/International coverage.<ul>
+        <li>They treat each other as equals.</li>
+        <li>Providers interconnect (peer) privately.</li>
+        <li>Connected to Internet Exchange point (IXP)</li>
+        </ul>
+        </li>
+        <li><strong>Tier 2 ISPs</strong>, smaller (often regional) ISPs.<ul>
+        <li>Connect to one or more tier 1 ISPs, possibly other tier-2 ISPs.</li>
+        <li>Tier 2 ISPs pay Tier 1 ISP for connectivity to rest of Internet.</li>
+        <li>Tier 2 ISPs also peer privately with each other, interconnect at IXP.</li>
+        </ul>
+        </li>
+        <li><strong>Tier 3 and Local ISPs</strong>, lasst hope (&quot;access&quot;) network (closest to end systems)<ul>
+        <li>Local and tier 3 ISPs are customers of higher tier ISPs, connecting them to the rest of the internet.</li>
+        <li><strong><strong>A packet may go through many networks!</strong></strong></li>
+        </ul>
+        </li>
+        
+        <img src="../assets/blog/2/internetStructure.png" alt="intersetStructure image" style="width: 60%; height: auto;">
+
+        </ul>
+        <h2 id="what-can-go-wrong-in-computer-networking">What can go wrong in computer networking?</h2>
+        <ul>
+        <li><em>Bit-level errors</em>: due to electrical interferences</li>
+        <li><em>Frame-level errors</em>: media access delay or frame collision due to contention/collision/interference</li>
+        <li><em>Packet-level errors</em>: packet delay or loss to network congestion/buffer overflow</li>
+        <li><em>Out of order deliver</em>: packets may take different paths</li>
+        <li><em>Link/Node failures</em>: cable is cut or system crash.</li>
+        </ul>
+        <h3 id="sources-of-packet-delay">Sources of packet delay</h3>
+        <ol>
+        <li><strong>Nodal processing</strong>: check bit errors, determine output link</li>
+        <li><strong>Queuing</strong>: time waiting at output link for transmission. Depends on congestion level of router.</li>
+        <li><strong>Transmission delay</strong>: R = link bandwidth (bps), L = packet length (bits). Time to send bits into link = L/R.</li>
+        <li><strong>Propagation delay</strong>: d = length of physical link, s = propagation speed in medium.</li>
+        </ol>
+        
+        <img src="../assets/blog/2/packetDelay.png" alt="packetDelay image" style="width: 60%; height: auto;">
+
+        <h4 id="nodal-delay">Nodal Delay</h4>
+        <ul>
+        <li><code>d{nodal} = d{proc} + d{queue} + d{trans} + d{prop}</code><ul>
+        <li>Where<ul>
+        <li><code>d{proc}</code> is the processing delay, it&#39;s typically a few microseconds or less.</li>
+        <li><code>d{queue}</code> is the queuing delay, depends on congestion</li>
+        <li><code>d{trans}</code> is the transmission delay, = L/R, significant for low-speed link</li>
+        <li><code>d{prop}</code> is the propagation delay, A few microseconds to hundreds of ms.</li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+
+    </div>
+</body>
+</html>
