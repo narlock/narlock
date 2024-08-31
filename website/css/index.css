@@ -53,12 +53,12 @@ nav li {
 }
 
 #socialsHeader li a {
-    color: gray;
+    color: white;
     transition: all 0.5s ease;
 }
 
 #socialsHeader li a:hover {
-    color: white;
+    color: orange;
 }
 
 #heroContainer {
@@ -184,9 +184,10 @@ nav li {
     left: auto;
   }
 
-  .myImage {
-    /* display: none; */
-  }
+  .fade-in img {
+    width: 20%;
+    height: auto;
+}
 
 @media only screen and (min-width: 750px) {
     nav li {
@@ -224,11 +225,6 @@ nav li {
     #heroContainer p {
         font-size: 20pt;
     }
-
-    .fade-in img {
-        width: 20%;
-        height: auto;
-    }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -251,12 +247,6 @@ nav li {
         width: 25%;
         height: auto;
     }
-
-    .myImage img{
-        display: flex;
-        width: 20%;
-        height: auto;
-    }
 }
 
 @media only screen and (min-width: 2560px) {
@@ -277,4 +267,38 @@ nav li {
 
     
 }
+
+.myImage img{
+    display: flex;
+    width: 20%;
+    height: auto;
+}
   
+
+#projectsDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem; /* Optional: Add some padding for spacing */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+#projectsDiv ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projectsDiv ul li {
+    margin-bottom: 0.5rem; /* Optional: Add some spacing between list items */
+}
+
+#projectsDiv ul li a {
+    color: white; /* Match the text color to the page style */
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+#projectsDiv ul li a:hover {
+    color: orange;
+}
